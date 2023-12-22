@@ -32,18 +32,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
-        };
     };
 
     macros {
@@ -111,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &none  &none     &kp UP    &none      &none              &none  &none  &none   &none  &none
-        &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none              &none  &none  &none   &none  &none
-&trans  &none  &none     &none     &none      &none              &none  &none  &none   &none  &none  &trans
-                         &trans    &trans     &lt 5 BACKSPACE    &none  &none  &trans
+        &kp TAB     &none     &kp UP    &none      &none              &none  &none  &none   &none  &none
+        &kp ESCAPE  &kp LEFT  &kp DOWN  &kp RIGHT  &none              &none  &none  &none   &none  &none
+&trans  &none       &none     &none     &none      &none              &none  &none  &none   &none  &none  &trans
+                              &trans    &trans     &lt 5 BACKSPACE    &none  &none  &trans
             >;
         };
 
