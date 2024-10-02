@@ -22,6 +22,10 @@
     tapping-term-ms = <225>;
 };
 
+&lt {
+    quick-tap-ms = <200>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -34,6 +38,9 @@
     };
 
     macros {
+    };
+
+    behaviors {
     };
 
     keymap {
